@@ -1,3 +1,4 @@
+//Member 6 Contribution
 const filterButtons = document.querySelectorAll('.filter-bar button');
 const vehicleCards = document.querySelectorAll('.vehicle-card');
 const searchInput = document.getElementById('searchInput');
