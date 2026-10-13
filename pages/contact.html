@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | DrivePNG Rentals</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/form-validation.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" class="brand" aria-label="DrivePNG home page">
+        <img src="../images/drivepng-logo.png" alt="DrivePNG Rentals" class="brand-logo">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="vehicles.html">Vehicles</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="Register.html">Login/Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <img src="../images/drivepng-logo.png" alt="DrivePNG Rentals" class="contact-logo">
+
+    <section class="contact-intro">
+      <h1>Contact Us</h1>
+      <p>Send us an enquiry and we will reply as soon as we can.</p>
+    </section>
+
+    <form id="contactForm" novalidate>
+      <div>
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+        <span class="error" id="nameError" aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <span class="error" id="emailError" aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label for="subject">Enquiry type</label>
+        <select id="subject" name="subject" required>
+          <option value="">Select one</option>
+          <option value="general">General enquiry</option>
+          <option value="services">Services</option>
+          <option value="events">Events</option>
+        </select>
+        <span class="error" id="subjectError" aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+        <span class="error" id="messageError" aria-live="polite"></span>
+      </div>
+
+      <button type="submit">Send enquiry</button>
+    </form>
+
+    <div id="formSuccess" role="status" aria-live="polite" hidden></div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2>DrivePNG Rentals</h2>
+      <p>Your Journey. Our Drive.</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vehicles.html">Vehicles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Register.html">Login/Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

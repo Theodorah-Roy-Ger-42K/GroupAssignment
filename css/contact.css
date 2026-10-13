@@ -1,0 +1,118 @@
+/* =========================================
+   CONTACT PAGE - DRIVEPNG RENTALS
+   ========================================= */
+
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+}
+
+.contact-intro {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.contact-intro h1 {
+  margin-bottom: 0.5rem;
+  color: #123b5d;
+}
+
+.contact-logo {
+  display: block;
+  width: 180px;
+  margin: 0 auto 1.5rem;
+}
+
+#contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#contactForm div {
+  margin-bottom: 1rem;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #123b5d;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-family: inherit;
+  color: #222222;
+  background-color: #f5f7f8;
+  box-sizing: border-box;
+}
+
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+  background-color: #ffffff;
+  border-color: #247a78;
+  outline: 3px solid #247a78;
+  outline-offset: 2px;
+}
+
+#contactForm button[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #247a78;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#contactForm button[type="submit"]:hover {
+  background-color: #1b5e5c;
+}
+
+.error {
+  display: block;
+  min-height: 1.1rem;
+  margin-top: 0.35rem;
+  color: #b00020;
+  font-size: 0.9rem;
+}
+
+[aria-invalid="true"] {
+  border: 2px solid #b00020;
+}
+
+#formSuccess {
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  padding: 1rem;
+  background: #eaf5f5;
+  border: 1px solid #247a78;
+  border-radius: 6px;
+  color: #123b5d;
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 3rem 5%;
+  }
+
+  #contactForm {
+    padding: 1.25rem;
+  }
+}
