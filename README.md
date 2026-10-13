@@ -1,158 +1,102 @@
-# 👥 Team Feature and Page Responsibilities
+# DrivePNG Rentals
 
-## 📌 Individual Responsibilities
+DrivePNG Rentals is a responsive, multi-page vehicle rental website. Visitors can learn about the service, browse a sample fleet, filter vehicles, send an enquiry, and view a registration form.
 
-Each team member must be assigned one webpage or system feature. The assigned member is responsible for:
+## Pages and Features
 
-- Creating the page structure using **HTML**
-- Designing and styling the page using **CSS**
-- Adding page interactions and functionality using **JavaScript**
-- Making the page responsive on mobile, tablet and desktop devices
-- Testing the page before it is added to the complete website
-- Documenting the completed work in the project `README.md`
-- Committing and pushing their own work to the shared GitHub repository
+- **Home** (`index.html`): Brand introduction, featured vehicles, service highlights, and links to the fleet.
+- **About** (`pages/about.html`): Company information, mission, service values, statistics, and team profiles with expandable details.
+- **Vehicles** (`pages/vehicles.html`): Five vehicle listings with descriptions, daily rates, category filters, text search, and links to the contact page to enquire about booking.
+- **Contact** (`pages/contact.html`): Enquiry form for name, email, enquiry type, and message, with inline validation and submission feedback.
+- **Login/Register** (`pages/register.html`): Account registration form with browser-required fields, password length constraints, and terms acceptance.
 
-## 📋 Page and Feature Allocation
+All pages share site navigation and footer links. The layouts include responsive styles for smaller screens, and the navigation menu can be toggled on mobile.
 
-| Team Member | Assigned Page or Feature | Main Responsibilities | Status |
-|---|---|---|---|
-| Member 1 | Home Page | Navigation, main content and page layout | Not started |
-| Member 2 | About Page | Organisation information and team section | Not started |
-| Member 3 | Products/Services Page | Product display, filtering and responsive layout | Not started |
-| Member 4 | Contact Page | Contact form, validation and feedback messages | Not started |
-| Member 5 | Login/Register Page | User forms, validation and page interactions | Not started |
+## Technologies
 
-> Replace the examples with the actual names of team members and their assigned pages or features.
+- HTML5
+- CSS3, including responsive media queries
+- Vanilla JavaScript
+- Local JPG and PNG image assets
 
-## 💻 GitHub Contribution Requirements
+No package installation, build step, or external JavaScript library is required.
 
-The GitHub commit history will be used as evidence of each member’s contribution.
+## Run Locally
 
-Every member must:
+1. Clone or download this repository.
+2. Open `index.html` in a modern web browser. Alternatively, serve the project directory with any static web server.
 
-1. Use their own GitHub account.
-2. Work on their assigned page or feature.
-3. Commit their work regularly.
-4. Use clear and meaningful commit messages.
-5. Push their commits to the shared repository.
-6. Check the latest version of the project before making changes.
-7. Inform the team before editing a file assigned to another member.
+Keep the `pages`, `css`, `js`, and `images` directories in their current locations so the relative links and image paths continue to work.
 
-Examples of appropriate commit messages:
+## Project Structure
 
 ```text
-Add semantic structure to home page
-Style navigation and main content
-Add mobile navigation behaviour
-Validate contact form fields
-Fix product grid on small screens
-```
-
-Avoid unclear commit messages:
-
-```text
-update
-changes
-work
-final
-fixed
-```
-
-> ⚠️ Each member must commit their own work. One member must not upload or commit another member’s entire page. The repository history must clearly show each member’s contribution.
-
-## 🔄 Working in the Shared Repository
-
-Separate branches are not required. All members may work in the same repository.
-
-Before starting work, run:
-
-```bash
-git pull
-```
-
-After completing a small section of work, run:
-
-```bash
-git add .
-git commit -m "Add contact form validation"
-git push
-```
-
-If Git reports a conflict, do not delete another member’s work. Discuss the conflict with the team and carefully combine the changes.
-
-## 🧪 Required Tests
-
-Each member must test their assigned page or feature.
-
-| Test | What to Check | Expected Result |
-|---|---|---|
-| 🔗 Navigation | Links, menus and buttons | Each item opens the correct page or section |
-| 📱 Responsive design | Mobile, tablet and desktop views | Content adjusts without horizontal scrolling |
-| 🧱 HTML validation | HTML structure and syntax | No serious validation errors |
-| 🎨 CSS testing | Layout, colours, spacing and text | The page remains readable and consistent |
-| ⚙️ JavaScript testing | Buttons, forms and interactions | Features work without console errors |
-| 📝 Form validation | Empty or incorrect input | Clear validation messages appear |
-| ♿ Accessibility | Labels, headings, alternative text and keyboard access | The page can be understood and operated |
-| 🌐 Browser testing | Chrome, Edge and Firefox | The page works consistently |
-| 🖼️ Media testing | Images, video and other files | Media loads without broken links |
-
-## 📸 Testing Evidence
-
-Each member must provide:
-
-- Screenshots of the page on mobile, tablet and desktop
-- HTML validation results
-- Evidence that links, buttons and forms were tested
-- Evidence showing no major JavaScript console errors
-- A link to the relevant GitHub commits
-- A short summary of problems identified and corrected
-
-## 📂 Suggested Project Structure
-
-```text
-project/
+.
 ├── index.html
 ├── pages/
 │   ├── about.html
-│   ├── products.html
 │   ├── contact.html
-│   └── login.html
+│   ├── register.html
+│   └── vehicles.html
 ├── css/
+│   ├── about.css
+│   ├── contact.css
+│   ├── register.css
 │   ├── style.css
-│   └── responsive.css
+│   └── vehicles.css
 ├── js/
+│   ├── about.js
+│   ├── form-validation.js
 │   ├── main.js
-│   ├── validation.js
-│   └── products.js
+│   └── vehicles.js
 ├── images/
 └── README.md
 ```
 
-## ✅ Completion Checklist
+### JavaScript
 
-Before a page or feature is marked as complete, the assigned member must confirm:
+- `js/main.js` toggles the mobile navigation and updates its accessible label and expanded state.
+- `js/about.js` expands and collapses team member profile details.
+- `js/vehicles.js` filters the fleet by vehicle type and matches search text against vehicle names and descriptions. It displays a message when there are no matches.
+- `js/form-validation.js` validates contact form fields, displays field-level errors, focuses the first invalid field, and shows a success message for valid submissions.
 
-- [ ] The page uses semantic HTML.
-- [ ] The page has consistent CSS styling.
-- [ ] The required JavaScript functionality works.
-- [ ] The page is responsive.
-- [ ] All links and images work.
-- [ ] Forms provide clear validation messages.
-- [ ] There are no major browser console errors.
-- [ ] Accessibility requirements have been checked.
-- [ ] Testing evidence has been recorded.
-- [ ] Meaningful commits appear under the member’s GitHub account.
-- [ ] The latest project version has been pushed to GitHub.
+## Image Assets
 
-## 🏁 Final Requirement
+All image files are stored in `images/` and are referenced locally by the website.
 
-A member’s contribution will only be recognised when the assigned page or feature has been:
+| File | Use |
+|---|---|
+| `drivepng-logo.png` | Site branding and contact page logo |
+| `drivepng-hero.png` | Home page hero image |
+| `toyota-land-cruiser-79.jpg` | Home page featured Land Cruiser |
+| `toyota-mark-ii.jpg` | Home page featured Toyota Mark II |
+| `ford-ranger-raptor.jpg` | Home page featured Ford Ranger Raptor |
+| `toyota-hilux.jpg` | About page hero image |
+| `landcruiser79.jpg` | Fleet listing: Toyota Land Cruiser 79 Series |
+| `mark2.jpg` | Fleet listing: Toyota Mark II |
+| `raptor.jpg` | Fleet listing: Ford Ranger Raptor |
+| `crv.jpg` | Fleet listing: Honda CR-V |
+| `hilux.jpg` | Fleet listing: Toyota Hilux |
+| `honda-crv.jpg` | Additional Honda CR-V image asset |
 
-- Implemented using HTML, CSS and JavaScript
-- Tested successfully
-- Documented in the project
-- Committed using the member’s own GitHub account
-- Clearly recorded in the repository’s commit history
+## Current Scope
 
-After all pages have been completed, the team must test the full website to ensure that its design, navigation and functionality are consistent.
+This repository is a static front-end project. The contact form currently validates input and displays an on-page confirmation; it does not send or store enquiries. The registration form does not create or authenticate accounts, and there is no separate login page. Vehicle booking links take visitors to the contact page; online booking and payment are not implemented.
+
+## Final Checks
+
+Before submission, test the site in the target browsers and check:
+
+- [ ] Navigation and page links work from both the home page and subpages.
+- [ ] The mobile menu opens and closes and reports its expanded state.
+- [ ] Vehicle search and each category filter show the expected listings, including the no-results state.
+- [ ] Contact form validation and success feedback behave as expected.
+- [ ] Registration required fields and password length are enforced by the browser.
+- [ ] Every image loads, and the layout remains usable on mobile, tablet, and desktop.
+- [ ] No JavaScript errors appear in the browser console.
+- [ ] HTML and accessibility checks have been completed.
+
+## AI Use Declaration
+
+Generative AI was used to help prepare and refine this README based on the project files. The project team is responsible for reviewing the documentation and the final submission. No AI functionality is integrated into the website.
 
